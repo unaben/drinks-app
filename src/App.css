@@ -1,38 +1,115 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+.app-container {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+
+/* .select {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+} */
+
+.two-column-grid-auto {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+/* .two-column-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+} */
+
+/* .heading-container {
+  height: fit-content;
+  background-color: steelblue;
+  color: white;
+  width: 100vw;
   text-align: center;
-}
+  padding: 10px; 
+} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .heading {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: fit-content;
+  width: 100%;
+  gap: 20px;  
+} */
+
+.select-form {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+/* .card-container {
+  font-family: sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .wrapper {
+  height: fit-content;
+  width: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: whitesmoke;
+} */
+
+/* .wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
+
+/* .text-wrapper {
+  text-align: left;
+  padding-left: 10px;
+} */
+/* 
+.text-wrapper h2 {
+  font-weight: lighter;  
+} */
+
+/*******Header*******/
+
+/* .header {
+  height: 80px;
+  background-color: steelblue;
   color: white;
-}
+  width: 100vw; 
+  text-align: center;
+  padding: 20px;
+} */
 
-.App-link {
-  color: #61dafb;
-}
+/*******Footer*******/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* .footer {
+  height: 80px;
+  background-color: steelblue;
+  color: white;
+  width: 100vw;  
+  text-align: center;
+  padding: 20px;
+} */
