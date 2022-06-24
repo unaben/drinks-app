@@ -1,0 +1,12 @@
+.select-form {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  
+  .select {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: larger;
+  }

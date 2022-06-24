@@ -5,4 +5,8 @@
   width: 100vw;
   text-align: center;
   padding: 20px;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,6 +1,7 @@
 import React from "react";
-import "./exhibition.styles.css"
-import { ICreator } from "../interfaces";
+import { ICreator } from "../../interface/interfaces";
+import Guest from "../guest/Guest";
+import Comment from "../comment/Comment";
 
 type ExhibitionProps = {
   exhibition: ICreator;
@@ -9,24 +10,39 @@ type ExhibitionProps = {
 const Exhibition = ({ exhibition }: ExhibitionProps) => {
   return (
     <>
-      <div className="heading-container">
-        <h2>Title: {exhibition.title}</h2>
-        <div className="heading">
-          <h3>Type: {exhibition.type}</h3>
-          <h3>Location: {exhibition.location.name}</h3>
-        </div>
-      </div>
-      <div className="card-container">
-        <div className="wrapper">
-          <img src={exhibition.creator.avatarUrl} alt="avatar-img" />
-          <div className="text-wrapper">
-            <h2 style={{ textAlign: "center" }}>CREATOR</h2>
-            <h2 style={{ textAlign: "center" }} key={exhibition.id}>
-              {exhibition.creator.name}
-            </h2>
+      <section className="py-4 bg-white">
+        <div className="container">
+          <div className="row text-center mb-3">
+            <h2>Title: {exhibition.title}</h2>
+            <div className="">
+              <h3>Type: {exhibition.type}</h3>
+              <h3>Location: {exhibition.location.name}</h3>
+            </div>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-md-4 mb-3">
+              <div>
+                <div className="card shadow">
+                  <img
+                    src={exhibition.creator.avatarUrl}
+                    className="card-img-top"
+                    alt="img"
+                  />
+                  <div className="card-body">
+                    <h2>CREATOR</h2>
+                    <div className="mb-3"></div>
+                    <h2 key={exhibition.id}>{exhibition.creator.name}</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-8">
+              <Comment exhibition={exhibition} />
+              <Guest exhibition={exhibition} />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

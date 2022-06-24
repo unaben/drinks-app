@@ -1,28 +1,31 @@
 import React from "react";
-import "./guest.styles.css"
-import { ICreator } from "../interfaces";
+import { ICreator } from "../../interface/interfaces";
+
 type GuestProps = {
   exhibition: ICreator;
 };
 const Guest = ({ exhibition }: GuestProps) => {
   return (
-    <div>
+    <div className="row mb-3">
       {exhibition.guests &&
         exhibition.guests.map((guest, index) => {
           return (
-            <div className="two-column-grid">
-            <div className="card-container">
-              <div className="wrapper">
-                <img src={guest.avatarUrl} alt="user-img" />
-                <div className="text-wrapper">
-                  <h2 style={{ textAlign: "center" }}>GUEST</h2>
-                  <h2 style={{ textAlign: "center" }} key={index}>
-                    {guest.name}
-                  </h2>
+            <>
+              <div className="col-sm-6 col-md-4 mb-3">
+                <div className="card shadow">
+                  <img
+                    src={guest.avatarUrl}
+                    className="card-img-top"
+                    alt="img"
+                  />
+                  <div className="card-body text-center">
+                    <h2>GUEST</h2>
+                    <div className="mb-3"></div>
+                    <h2 key={index}>{guest.name}</h2>
+                  </div>
                 </div>
               </div>
-            </div>
-            </div>
+            </>
           );
         })}
     </div>
