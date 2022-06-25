@@ -20,6 +20,8 @@ function App() {
   };
 
   const drinkTypes = exhibitions.map((drink) => drink.type).sort();
+
+  // removing duplicate types from the array
   const uniqueDrinkTypes = new Set([...drinkTypes]);
 
   return (

@@ -1,8 +1,26 @@
 .header {
-  height: 80px;
+  height: 90px;
   background-color: steelblue;
-  color: white;
+  /* background-color: #bb6b62; */
+  color: whitesmoke;
   width: 100vw;
-  text-align: center;
+  /* text-align: center; */
   padding: 20px;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Courgette", cursive;
+  font-weight: 500;
+  font-size: xx-large;
+}
+
+.header img {
+  height: 70px;
+  width: 50px;
+  border-radius: 5px;
+  margin: 5px;
 }

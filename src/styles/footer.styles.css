@@ -1,9 +1,10 @@
 .footer {
   height: 80px;
   background-color: steelblue;
+  /* background-color: #bb6b62; */
   color: white;
   width: 100vw;
-  text-align: center;
+  /* text-align: center; */
   padding: 20px;
   font-size: x-large;
   display: flex;
