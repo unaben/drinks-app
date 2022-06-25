@@ -12,6 +12,7 @@ import Fetch from "./components/fetchComponent/Fetch";
 function App() {
   const [exhibitions, setExhibitions] = useState<ICreator[]>([]);
   const [selectedType, setSelectedType] = useState<string>("");
+  
 
   const handleSelect = (event: ChangeEvent<HTMLSelectElement>) => {
     event.preventDefault();

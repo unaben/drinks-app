@@ -20,7 +20,7 @@ const Select = ({
           id="title"
           value={selectedTitle}
         >
-          <option value="">Filter By Title...</option>
+          <option value="">Filter By Type...</option>
           {filteredTitle &&
             filteredTitle.map((data, index) => (
               <option key={index} value={data}>
