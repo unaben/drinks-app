@@ -4,7 +4,7 @@ import "../../styles/header.styles.css";
 export default function Header() {
   return (
     <div className="header">
-      <h1>
+      <h1 className="display-6 fs-1">
         Drinks
         <img
           src={
